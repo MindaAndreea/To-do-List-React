@@ -1,0 +1,8 @@
+.button button {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    outline: none;
+    border: none;
+    height: 46px;
+}
