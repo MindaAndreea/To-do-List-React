@@ -1,6 +1,9 @@
 .input {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 input {
@@ -10,5 +13,9 @@ input {
     outline: none;
     color: var(--color-white);
     height: 40px;
+    width: 80%;
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 1px;
 }
 

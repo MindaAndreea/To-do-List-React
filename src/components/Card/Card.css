@@ -1,9 +1,24 @@
 .card {
     background-color: var(--color-secondary);
-    padding: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 600px;
+    height: 500px;
 }
 
-.card h1 {
+.card-title {
     font-size: 35px;
+    text-align: center;
+}
+
+.card-title::after {
+    content: "!";
+    margin-left: 10px;
+}
+
+.addTask, .editTask {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
