@@ -2,4 +2,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 9px;
+    margin-bottom: 15px;
+}
+
+.editIcon, .deleteIcon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.editIcon {
+    margin-right: 15px;
 }

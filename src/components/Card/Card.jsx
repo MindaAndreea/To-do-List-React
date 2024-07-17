@@ -8,7 +8,9 @@ const Card = () => {
     <div className='card'>
         <h1 className='card-title'>Get Things Done</h1>
         <Input placeholderText = "What is the task today?" textBtn="Add task"/>
-        <ToDo />
+        <ToDo taskText="task 1"/>
+        <ToDo taskText="task 2"/>
+        <ToDo taskText="task 3"/>
     </div>
   )
 }
