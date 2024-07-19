@@ -1,24 +1,25 @@
 .card {
-    background-color: var(--color-secondary);
-    padding: 40px 30px;
-    border-radius: 12px;
-    width: 600px;
-    height: 500px;
+  background-color: var(--color-secondary);
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 600px;
+  height: 500px;
 }
 
 .card-title {
-    font-size: 35px;
-    text-align: center;
+  font-size: 35px;
+  text-align: center;
 }
 
 .card-title::after {
-    content: "!";
-    margin-left: 10px;
+  content: "!";
+  margin-left: 10px;
 }
 
-.addTask, .editTask {
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
+.addTask,
+.editTask {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
 }
