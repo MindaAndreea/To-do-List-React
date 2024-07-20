@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css";
 import Input from "../Input/Input";
 import ToDo from "../ToDo/ToDo";
 
 const Card = () => {
+  const [todos, setTodos] = useState([]);
+
   const addTodo = (todo) => {
-    console.log(todo);
+    setTodos([...todos, todo]);
   };
+
   return (
     <div className="card">
       <h1 className="card-title">Get Things Done</h1>
       <Input
         placeholderText="What is the task today?"
         textBtn="Add task"
-        addToDo={addTodo}
+        addTodo={addTodo}
       />
-      <ToDo taskText="task 1" />
-      {/* <ToDo taskText="task 2" />
-      <ToDo taskText="task 3" /> */}
+      {todos.map((todo, index) => (
+        <ToDo taskText={todo} key={index} />
+      ))}
     </div>
   );
 };
