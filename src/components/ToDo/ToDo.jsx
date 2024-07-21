@@ -10,8 +10,20 @@ const ToDo = (props) => {
       <div className="task">{props.taskText}</div>
       <div className="icons">
         <div>
-          <FontAwesomeIcon icon={faPenToSquare} className="editIcon" />
-          <FontAwesomeIcon icon={faTrash} className="deleteIcon" />
+          <FontAwesomeIcon
+            icon={faPenToSquare}
+            className="editIcon"
+            onClick={() => {
+              props.editTask(props.id);
+            }}
+          />
+          <FontAwesomeIcon
+            icon={faTrash}
+            className="deleteIcon"
+            onClick={() => {
+              props.deleteTask(props.id);
+            }}
+          />
         </div>
       </div>
     </div>
